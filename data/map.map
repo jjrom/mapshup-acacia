@@ -1,0 +1,65 @@
+
+MAP
+    IMAGECOLOR 0 0 0
+    IMAGEQUALITY 100
+    IMAGETYPE PNG
+    INTERLACE ON
+    SIZE 256 256
+    STATUS ON
+    TRANSPARENT ON
+    UNITS METERS
+    DEBUG 0
+    OUTPUTFORMAT
+        NAME "AGGPNG"
+        DRIVER "AGG/PNG"
+        EXTENSION "png"
+        MIMETYPE "image/png"
+        IMAGEMODE RGBA
+        TRANSPARENT ON
+        FORMATOPTION "TRANSPARENT=ON"
+    END
+    WEB
+        IMAGEPATH "/tmp/"
+        IMAGEURL "/"
+        METADATA
+            "ows_enable_request"   "*"
+            "wms_title"          "WMS proxy for Landsat Sud France project"
+            "wms_onlineresource" "http://localhost/cgi-bin/mapserv?map=/Volumes/PTSC/_CNES/_RetT_2012-WPS/map.map&"
+            "wms_srs"            "EPSG:4326 EPSG:3857"
+            "wms_feature_info_mime_type"    "text/html"
+        END
+    END
+    PROJECTION
+        "init=epsg:3857"
+    END
+    LAYER
+        NAME  "prades1"
+        TYPE RASTER
+        OFFSITE 0 0 0
+        DATA "/Volumes/PTSC/_CNES/_RetT_2012-WPS/prades_pleiades1.tif"
+        STATUS ON
+        PROJECTION
+            "init=epsg:3857"
+        END
+    END
+    LAYER
+        NAME  "prades2"
+        TYPE RASTER
+        OFFSITE 0 0 0
+        DATA "/Volumes/PTSC/_CNES/_RetT_2012-WPS/prades_pleiades2.tif"
+        STATUS ON
+        PROJECTION
+            "init=epsg:3857"
+        END
+    END
+    LAYER
+        NAME  "classification"
+        TYPE RASTER
+        OFFSITE 0 204 242
+        DATA "/Volumes/PTSC/_CNES/_RetT_2012-WPS/prades_classification.tif"
+        STATUS ON
+        PROJECTION
+            "init=epsg:3857"
+        END
+    END
+END

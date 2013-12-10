@@ -1,0 +1,17 @@
+Emprise zone n°1 (2627 x 2227 pixels) :
+  Longitude coin supérieur gauche :  2.70701
+  Latitude coin supérieur gauche :  42.66213
+  Longitude coin inférieur droit :   2.76338
+  Latitude coin inférieur droit :   42.62698
+
+Emprise zone n°2 (2197 x 2019 pixels) :
+  Longitude coin supérieur gauche :  2.50643
+  Latitude coin supérieur gauche :  42.66551
+  Longitude coin inférieur droit :   2.55357
+  Latitude coin inférieur droit :   42.63364
+
+Emprise zone n°3 (3617 x 3464 pixels) :
+  Longitude coin supérieur gauche :  2.36678
+  Latitude coin supérieur gauche :  42.64082
+  Longitude coin inférieur droit :   2.44439
+  Latitude coin inférieur droit :   42.58611

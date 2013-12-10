@@ -1,0 +1,16 @@
+html {
+    overflow: auto;
+}
+#__CONTROL_ATTRIBUTION__ {
+    background-color:transparent;
+    color: #000000;
+    font-size: 0.9em;
+}
+.olControlAttribution {
+    left:10px;
+    bottom:30px;
+    height:18px;
+    width:auto;
+    max-width:600px;
+    text-align:left;
+}

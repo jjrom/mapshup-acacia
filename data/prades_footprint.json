@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Prades",
+                "description": "Pléiades image on Prades - South of France",
+                "services": {
+                    "browse": {
+                        "title": "View on map",
+                        "layer": {
+                            "type": "WMS",
+                            "title": "Prades",
+                            "url": "http://localhost/cgi-bin/mapserv?map=/Volumes/PTSC/_CNES/_RetT_2012-WPS/map.map&WIDTH=150&HEIGHT=75&STYLES=&FORMAT=image/png&TRANSPARENT=false&SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&SRS=EPSG:4326&BBOX=2.29614,42.5045,2.80151,42.8115&LAYERS=prades1",
+                            "layers": "",
+                            "srs": "EPSG:3857"
+                        }
+                    }
+                }
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[[2.305494998168939, 42.68772292532413], [2.6666705352783495, 42.81226502634841], [2.796446536254936, 42.63419897606425], [2.442137454223692, 42.5072746031074], [2.373472903442385, 42.596300425131304], [2.305494998168939, 42.68772292532413]]]
+            }
+        }
+    ]
+}

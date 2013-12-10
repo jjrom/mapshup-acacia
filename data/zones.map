@@ -1,0 +1,61 @@
+MAP
+    IMAGECOLOR 255 255 255
+    IMAGEQUALITY 100
+    IMAGETYPE PNG
+    INTERLACE ON
+    SIZE 256 256
+    STATUS ON
+    TRANSPARENT ON
+    UNITS DD
+    DEBUG 0
+    OUTPUTFORMAT
+        NAME "AGGPNG"
+        DRIVER "AGG/PNG"
+        EXTENSION "png"
+        MIMETYPE "image/png"
+        IMAGEMODE RGBA
+        TRANSPARENT ON
+        FORMATOPTION "TRANSPARENT=ON"
+    END
+    WEB
+      IMAGEPATH "/tmp/"
+      IMAGEURL "/"
+      METADATA
+        "ows_enable_request"   "*"
+        "wms_title"          "valinor WMS"
+        "wms_onlineresource" "http://localhost/cgi-bin/mapserv?map=/Users/jrom/Documents/CNES/_RetT/2012-WPS/_data/zones.map&"
+        "wms_srs"            "EPSG:4326 EPSG:3857"
+        "wms_feature_info_mime_type"    "text/html"
+        "wms_extent"          "-180.0,-90.0,180.0,90.0"
+      END
+    END
+    PROJECTION
+      "init=epsg:3857"
+    END
+
+	#
+	# Start of layer definitions
+	#
+	LAYER
+	    NAME "zone1"
+        GROUP "zone"
+	    DATA "/Users/jrom/Documents/CNES/_RetT/2012-WPS/_data/zone1_couleurs_rgb8bits.tif"
+	    TYPE RASTER
+	    STATUS ON
+	END
+	LAYER
+	    NAME "zone2"
+	    GROUP "zone"
+        DATA "/Users/jrom/Documents/CNES/_RetT/2012-WPS/_data/zone2_couleurs_rgb8bits.tif"
+	    TYPE RASTER
+	    STATUS ON
+	END
+	LAYER
+	    NAME "zone3"
+	    GROUP "zone"
+        DATA "/Users/jrom/Documents/CNES/_RetT/2012-WPS/_data/zone3_couleurs_rgb8bits.tif"
+	    TYPE RASTER
+	    STATUS ON
+	END
+
+END
